@@ -53,6 +53,7 @@ class AuthRepoImpl extends AuthRepo {
     }
   }
 
+  @override
   Future<Either<Failure, UserEntity>> signInWithFacebook() async {
     try {
       var user = await firebaseAuthService.signInWithFacebook();
