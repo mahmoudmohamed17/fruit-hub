@@ -6,7 +6,7 @@ import 'package:fruit_hub/core/func/on_generated_route.dart';
 import 'package:fruit_hub/core/services/custom_bloc_observer.dart';
 import 'package:fruit_hub/core/services/get_it_service.dart';
 import 'package:fruit_hub/core/services/prefs.dart';
-import 'package:fruit_hub/features/splash/presentation/view/splash_view.dart';
+import 'package:fruit_hub/features/onboard/presentation/view/onboard_view.dart';
 import 'package:fruit_hub/firebase_options.dart';
 import 'package:fruit_hub/generated/l10n.dart';
 
@@ -41,7 +41,7 @@ class FruitHub extends StatelessWidget {
         useMaterial3: true,
       ),
       onGenerateRoute: onGeneratedRoute,
-      initialRoute: SplashView.routeName,
+      initialRoute: OnboardView.routeName,
     );
   }
 }
